@@ -14,7 +14,7 @@ class solver_tree
 private:
     T *root; 
     set<vector<vector<int>>> current_state;
-    priority_queue<node_puzzle*, vector<node_puzzle*>, node_comparator> solver_queue;
+    stack<T*> solver_queue;
 public:
     solver_tree();
     solver_tree(T &n);

@@ -9,7 +9,7 @@ class node_comparator
     {
     bool reverse;
     public:
-    node_comparator(const bool& revparam=false)
+    node_comparator(const bool& revparam=true)
         {reverse=revparam;}
     bool operator() (node_puzzle* &lhs, node_puzzle* &rhs) const
     {

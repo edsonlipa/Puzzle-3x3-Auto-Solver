@@ -93,12 +93,12 @@ int main()
             {
                 if (event.key.code == sf::Keyboard::Left)
                 {
-                    cout<<"anterior "<<count<<endl;
+                    cout<<"anterior :"<<count<<endl;
                     test=solution[(count<solution.size()-1)?++count:count]->getpuzz();
                 }
                 else if (event.key.code == sf::Keyboard::Right)
                 {
-                    cout<<"siguiente "<<count<<endl;
+                    cout<<"siguiente :"<<count<<endl;
                     test=solution[(count>0)?--count:count]->getpuzz();
                 }
                 else if (event.key.code == sf::Keyboard::Up)
